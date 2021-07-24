@@ -8,12 +8,14 @@
   <title>Panda-House</title>
   <!-- *Bootstrap css -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- *Custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
   <!-- *Header start -->
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light my-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" width="164" height="28"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,24 +28,24 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#bags">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subs">Subscribe</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- *Image slider -->
-    <section class="container">
+    <section class="container slider">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+            <div class="row panda-bg-info bg-gradient p-5 d-flex align-items-center">
               <div class="col-lg-7">
                 <h1>Cool Dude Headphone
                 </h1>
@@ -51,7 +53,7 @@
                   world.
                 </p>
                 <h1>$420</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn panda-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="assets/img/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -59,14 +61,14 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+            <div class="row panda-bg-info bg-gradient p-5 d-flex align-items-center">
               <div class="col-lg-7">
                 <h1>Mega LCD TV For Sports
                 </h1>
                 <p>This is the best tv in the world for people who just want to waste time in front of tv.
                 </p>
                 <h1>$420</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn panda-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="assets/img/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -74,14 +76,14 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+            <div class="row panda-bg-info bg-gradient p-5 d-flex align-items-center">
               <div class="col-lg-7">
                 <h1>X-Box for your living room
                 </h1>
                 <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.
                 </p>
                 <h1>$420</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn panda-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="assets/img/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -105,7 +107,7 @@
   <!-- *main start -->
   <main>
     <!-- *Catagories -->
-    <section class="container my-5">
+    <section class="container my-5 catagories">
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="p-3 border bg-warning d-flex justify-content-between align-items-center rounded-3">
@@ -128,11 +130,121 @@
       </div>
       </div>
     </section>
-
+    <!-- *Shoes -->
+    <section class="container" id="shoes">
+      <h1 class="my-3">Shoes</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/shoes/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Supply 350</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.
+                This content is a little bit longer.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/shoes/shoe-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike 360</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/shoes/shoe-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Airmax</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.
+                This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *Backpack -->
+    <section class="container my-5" id="bags">
+      <h1 class="my-3">Backpack</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/bags/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Laltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.
+                This content is a little bit longer.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/bags/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blue Niltu Bag</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0">
+            <img src="assets/img/bags/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Black kaltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.
+                This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="m-3">
+              <button class="panda-btn btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *Subscribe section -->
+    <section style="height: 300px;" id="subs"
+      class="container bg-gradient panda-bg-info d-flex justify-content-center align-items-center rounded-3">
+      <div>
+        <h1>
+          LET'S STAY IN TOUCH
+        </h1>
+        <p class="text-muted">
+          Get updates on sales, specials and more
+        </p>
+        <form action="">
+          <input class="form-control" type="email" placeholder="Your Email" required>
+          <br>
+          <button type="submit" class="btn panda-btn">Submit</button>
+        </form>
+      </div>
+    </section>
   </main>
   <!-- *footer start -->
-  <footer>
-
+  <footer class="mt-5">
+    <p class="small text-center">
+      &copy 2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.
+    </p>
   </footer>
   <!-- *Bootstrap js -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
